@@ -99,39 +99,39 @@ document.querySelectorAll('.category-btn').forEach(btn => {
 const projects = [
   {
     title: 'E-Commerce Shop App',
-    description: 'A full-featured e-commerce shopping application with product listings, cart management, and a smooth checkout experience.',
+    description: 'A full-stack e-commerce application with product listings, cart management, Stripe payments, and an admin dashboard for managing products and orders.',
     image: 'assets/ecommerce.jpg',
-    technologies: ['React', 'JavaScript', 'CSS3', 'LocalStorage'],
+    technologies: ['React', 'Node.js', 'MongoDB'],
     category: 'react',
     github: 'https://github.com/megersa93/Ecommerce-shop-app',
-    live: 'https://megersa93.github.io/ecommerce-shop-app'
+    live: 'https://ecommerce-shop-app-client.vercel.app'
   },
   {
-    title: 'Restaurant Landing Page',
-    description: 'A beautiful restaurant landing page built with vanilla JavaScript, featuring smooth animations, interactive menu, and a fully responsive layout.',
-    image: 'assets/food.jpg',
-    technologies: ['JavaScript', 'HTML5', 'CSS3', 'Responsive'],
-    category: 'javascript',
-    github: 'https://github.com/megersa93/Resturant_land-by-javascript',
-    live: 'https://megersa93.github.io/restaurant-landing'
+    title: 'Social Media App',
+    description: 'A full-stack social media platform with user authentication, post creation, image uploads, likes, and a real-time feed.',
+    image: 'assets/social.jpg',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
+    category: 'react',
+    github: 'https://github.com/megersa93/social-media-app',
+    live: 'https://social-media-fgdhi622h-megersatekalign95-2269s-projects.vercel.app'
   },
   {
-    title: 'Weather App',
-    description: 'A responsive weather application built with JavaScript that fetches real-time weather data, displays forecasts, and features a clean animated UI.',
-    image: 'assets/weather.jpg',
-    technologies: ['JavaScript', 'HTML5', 'CSS3', 'Weather API'],
-    category: 'javascript',
-    github: 'https://github.com/megersa93/Weather-App-by-Javascript',
-    live: 'https://megersa93.github.io/weather-app'
+    title: 'React Notes App',
+    description: 'A clean and responsive notes application built with React, featuring create, edit, delete, search, sort, and dark mode — all persisted in localStorage.',
+    image: 'assets/note-book.jpg',
+    technologies: ['React', 'JavaScript', 'CSS3', 'LocalStorage'],
+    category: 'react',
+    github: 'https://github.com/megersa93/Note-book-by-react',
+    live: 'https://note-book-by-react.vercel.app'
   },
   {
-    title: 'Online Platform',
-    description: 'A modern online platform with user-friendly interface, dynamic content management, and interactive features for an engaging user experience.',
+    title: 'Online Learning Platform',
+    description: 'A modern online learning platform with course listings, interactive UI, and a smooth user experience built with React and Tailwind CSS.',
     image: 'assets/learning-education.jpg',
-    technologies: ['React', 'JavaScript', 'CSS3', 'API'],
+    technologies: ['React', 'Tailwind CSS', 'React Router', 'Vite'],
     category: 'react',
     github: 'https://github.com/megersa93/Online-learning-platform',
-    live: 'https://megersa93.github.io/online-platform'
+    live: ''
   }
 ];
 
@@ -146,7 +146,6 @@ function renderProjects(filter) {
         <div class="image-placeholder"><span>Project Image</span></div>
         <div class="project-overlay">
           <a href="${p.github}" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="${p.live}" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
         </div>
       </div>
       <div class="project-content">
