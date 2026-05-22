@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Megersa Tekalign | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-brand"><h2>Megersa.T</h2></div>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Megersa Tekalign</span></h1>
+          <h2 class="typing-text">I'm a <span class="typed-text" id="typedText"></span><span class="cursor">|</span></h2>
+          <p>Passionate about creating beautiful, responsive, and user-friendly web applications using modern technologies like HTML, CSS, JavaScript, and React.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-image-container">
+            <div class="profile-image">
+              <img src="assets/merga.jpg" alt="Megersa Tekalign - Frontend Developer" class="profile-photo"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="image-placeholder fallback" style="display:none">
+                <div class="profile-avatar"><span>MT</span></div>
+              </div>
+            </div>
+            <div class="image-decorations">
+              <div class="decoration decoration-1"></div>
+              <div class="decoration decoration-2"></div>
+              <div class="decoration decoration-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>Get to know me better</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Hello! I'm a Frontend Developer</h3>
+          <p>I'm passionate about creating beautiful, functional, and user-centered digital experiences. With a strong foundation in HTML, CSS, JavaScript, and React, I enjoy turning complex problems into simple, beautiful, and intuitive solutions that deliver exceptional user experiences.</p>
+          <div class="about-stats">
+            <div class="stat"><h4>10+</h4><p>Projects Completed</p></div>
+            <div class="stat"><h4>1+</h4><p>Years Experience</p></div>
+            <div class="stat"><h4>100%</h4><p>Client Satisfaction</p></div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-container">
+            <div class="floating-elements">
+              <div class="element html">HTML</div>
+              <div class="element css">CSS</div>
+              <div class="element js">JS</div>
+              <div class="element react">React</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <p>Technologies and tools I work with</p>
+      </div>
+      <div class="skills-categories">
+        <button class="category-btn active" data-category="frontend">Frontend</button>
+        <button class="category-btn" data-category="tools">Tools</button>
+        <button class="category-btn" data-category="soft">Soft Skills</button>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <p>Here are some of my recent works</p>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Let's work together on your next project</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's talk about everything!</h3>
+          <p>Don't like forms? Send me an email. 👋 Or give me a call. I'm always excited to discuss new opportunities and interesting projects.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div><h4>Email</h4><p>megersatekalign95@gmail.com</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div><h4>Phone</h4><p>+251 960379119</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div><h4>Location</h4><p>Adama, Ethiopia</p></div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn submit-btn" id="submitBtn">Send Message</button>
+          <div class="submit-message" id="submitMessage"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Frontend Developer</h3>
+          <p>Passionate about creating beautiful and functional web experiences with modern technologies.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="footer-social">
+            <a href="https://github.com/megersa93" class="footer-social-link" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/" class="footer-social-link" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/" class="footer-social-link" target="_blank">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Megersa Tekalign. All rights reserved.</p>
+        <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
